@@ -1,106 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Resumes</title>
-    <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h1, h2, h3, h4, h5, h6 {
-      color: #333;
-    }
-    p {
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-    .section-title {
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-    }
-    .contact-info {
-      margin-top: 20px;
-    }
-    .contact-info p {
-      margin-bottom: 5px;
-    }
-    .skills {
-      margin-top: 20px;
-    }
-    .skills ul {
-      list-style: none;
-      padding: 0;
-    }
-    .skills ul li {
-      margin-bottom: 5px;
-    }
-    </style>
-    <script>
-    fetch("https://yfniwvuig9.execute-api.us-east-1.amazonaws.com/Prod/put")
-      .then(() => fetch("https://yfniwvuig9.execute-api.us-east-1.amazonaws.com/Prod/get"))
-      .then(response => response.json())
-      .then((data) => {document.getElementById('replaceme').innerText = data.count})
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Jane Doe</h1>
-      <div class="section-title">
-        <h2>Summary</h2>
-      </div>
-      <p>
-        Experienced Cloud Engineer with a passion for building scalable and reliable cloud infrastructure. Skilled in AWS, Azure, and Google Cloud Platform, with expertise in infrastructure as code, automation, and DevOps practices.
-      </p>
-      <div class="section-title">
-        <h2>Contact Information</h2>
-      </div>
-      <div class="contact-info">
-        <p>Email: john.doe@example.com</p>
-        <p>Phone: (555) 555-5555</p>
-        <p>
-          LinkedIn: <a href="https://www.linkedin.com/in/johndoe/" target="_blank">linkedin.com/in/johndoe</a>
-        </p>
-      </div>
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="skills">
-        <ul>
-          <li>AWS</li>
-          <li>Azure</li>
-          <li>Google Cloud Platform</li>
-          <li>Infrastructure as Code (Terraform, CloudFormation)</li>
-          <li>DevOps Practices (CI/CD, Automation)</li>
-          <li>Networking</li>
-          <li>Scripting (Python, Bash)</li>
-          <li>Containerization (Docker, Kubernetes,other)</li>
-        </ul>
-      </div>
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <p>Describe your only relevant work experience here.</p>
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <p>Bachelor of Science in Computer Science, University XYZ</p>
-      <p>
-        Visitor:
-        <span id="replaceme"></span>
-      </p>
-    </div>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Stacy Stipes</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Stacy Stipes</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#articles">Articles</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Stacy
+                        <span class="text-primary">Stipes</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Northern Virginia/DC Metro Area
+                        <a href="mailto:slstipes@gmail.com">slstipes@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">
+                    <p>I am an AWS Cloud Engineer skilled in IT Operations Management and System Administration for classified systems in the government sector. Experienced with Amazon Web Services and VMWare vSphere in on-premises private cloud and hybrid cloud IaaS environments.</p>
+                    <p>I have a demonstrated history of turning difficult projects into successes by pinpointing problem areas, eliminating obstacles, implementing process improvements, and improving team dynamics and morale. My enthusiastic attitude, strong work ethic, creative problem solving, and commitment to continued professional education are an asset to any team or project.</p>
+                    <p>My story is featured in <a href="https://cloudresumechallenge.dev/"><i>The Cloud Resume Challenge</i></a> by Forrest Brazeal, Head of Content at Google Cloud.
+                    <p>
+                    Visits: <span id="visits"></span>
+                    <p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/stacystipes/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/stacystipes"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://dev.to/stacystipes"><i class="fab fa-dev"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Cloud Operations Engineer</h3>
+                            <div class="subheading mb-3">NexGen Data Systems</div>
+                            <ul>
+                            <li>Designs and implements cloud infrastructure resources including EC2 instances, Load Balancers, CloudFront distributions, Auto-Scaling Groups, Databases, S3 storage and static websites using Amazon Web Services (AWS) in both commercial (public) and GovCloud environments.</li>
+                            <li>Performs AWS system configuration to include creation/change/deletion of IAM users, roles, and permissions, management of Simple Notification Service (SNS) and Simple Email Service (SES), creation and changes to VPCs, Security Groups, network ACLs, and DNS records, configuration of CloudWatch alarms and CloudTrail API logging.</li>
+                            <li>Performs weekly maintenance for tenant sites, including S3 bucket and lifecycle maintenance, CloudFront configuration, WordPress patching, tenant site decommissions, configuration of AWS Web Application Firewalls (WAF), deployment of AWS Elastic Beanstalk environments, and policy updates.</li>
+                            <li>Creates hardened, STIG AMI images that comply with DOD standards and best practices, works with IA/C&A teams to conduct security scans and audits, performs patches and updates as necessary to remediate security vulnerabilities via AWS Systems Manager. </li>
+                            <li>Develops scripts using AWS Lambda, Python, PowerShell, and Bash to automate tasks, workflows, and processes.</li>
+                            <li>Monitors performance of remote and local systems to identify problems, performs analysis to identify root cause of performance issues using AWS CloudWatch and CloudTrail, takes appropriate action to resolve issues.</li>
+                            <li>Documentation of cloud architecture and operational processes, including maintenance processes, installation guides, configuration guides, user access and security, backups and restoration, and software dependencies.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2021 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Cloud DevOps Engineer</h3>
+                            <div class="subheading mb-3">Perspecta</div>
+                            <ul>
+                            <li>Designed cloud infrastructure for the development project architectural runway using Amazon Web Services (AWS) and Terraform in both commercial (public) and GovCloud environments, enabling other project teams to work on their features without further delay to the project.</li>
+                            <li>Creation and configuration of cloud architecture, including Security Groups, VPCs, network ACLs, EC2 instances, AWS RDS databases, Load Balancers, and user accounts/roles/permissions.</li>
+                            <li>Worked with application vendors on architecture, deployment, and configuration of applications into the AWS cloud environment using infrastructure as code. Created custom scripts to handle the deployments using Terraform, PowerShell, and Bash to provide an immutable process that could be replicated and run automatically through a CI/CD pipeline.</li>
+                            <li>Created continuous integration/continuous delivery (CI/CD) pipeline using GitHub and AWS CodePipeline. </li>
+                            <li>Created and managed testing and training environments for Agile Release Train teams to support vendor training and classes.</li>
+                            <li>Created AWS Lambda functions using Python to automate EC2 instance shutdowns and restarts within the development environment during off-business hours to save on costs.</li>
+                            <li>Created hardened, STIG AMI images that comply with DOD standards and best practices, worked with IA/C&A teams on security scans and audits.</li>
+                            <li>Worked with other Agile Release Train teams on troubleshooting application, system, and database issues at the cloud level.</li>
+                            <li>Provided AWS training and guidance to other teams as necessary so that they could work within the AWS management console and CLI more efficiently.</li>
+                            <li>Documentation of cloud architecture and applications, including installation guides, configuration guides, user access and security, backups and restoration, and software dependencies.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2020 - 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Cloud Operations Engineer</h3>
+                            <div class="subheading mb-3">Cloud Lake Technology</div>
+                            <ul>
+                            <li>Administration of VMWare vCenter 7.0 environment, including configuring ESXi hosts, storage, and compute, configuration of tenant/application clusters, vCenter environment upgrades, and designing custom reports, metrics, and super metrics via vRealize Operations Manager.</li>
+                            <li>Installation, Configuration, and Administration of Operations applications, including Solarwinds, JIRA, Ivanti Shavlik, and Tenable Nessus.</li>
+                            <li>Windows Administration, including Active Directory, DNS, replication, account creation, password changes, and Microsoft Exchange administration.</li>
+                            <li>Identifies system vulnerabilities by creating and reviewing Nessus scans of cloud environment and providing security analysis and risk identification. </li>
+                            <li>Patches all management network systems using to ensure that security vulnerabilities have been eliminated and OS and application upgrades are up to date.</li>
+                            <li>Cisco UCS administration including setup and replacement of blades, memory, and other hardware, and configuration of blades.</li>
+                            <li>Conducts new product studies and performs requirements analysis, new product installations, and testing to determine what products should be recommended for procurement and production.</li><li>Assist customers with troubleshooting, requests for additional resources, and other service requests as needed.</li>
+                            <li>Coordinate new tenant requests with engineering teams to ensure that all customer requirements are met.</li>
+                            <li>Documentation of SOPs, system configuration information, customer QRGs, and marketing materials.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2019 - 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Service Desk Manager</h3>
+                            <div class="subheading mb-3">SAVA Solutions</div>
+                            <ul>
+                            <li>Received personal commendation from Agency Administrator for excellent service and performance.</li>
+                            <li>Received Contractor of the Quarter award in 2017.</li>
+                            <li>Managed the Service Desk through major contract transition.</li>
+                            <li>Drastically improved Service Desk SLAs/KPIs while also improving team morale.</li>
+                            <li>Managed two separate Call Center System launches, eventually moving the Service Desk to a modern VOIP solution with remote support.</li>
+                            <li>Provided career development coaching to Service Desk technicians.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2016-2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Windows Systems Engineer/Team Lead</h3>
+                            <div class="subheading mb-3">SAVA Solutions</div>
+                            <ul>
+                            <li>Provided Tier 1 support to over 15,000 users, including troubleshooting for Active Directory, hardware, software, networking, and mobile solutions for PC, Mac, iPhone, iPad, Samsung Galaxy and Blackberry.</li>
+                            <li>Provided quality assurance by following up on audits and problem tickets, ensuring that users were helped accurately and efficiently, and evaluating areas for improvement in procedures and training.</li><li>Collaborated with service desk and project management on process improvement to increase the efficiency of the service desk. This included changes to the phone tree, staff skill tiering, implementing ticket templates, and developing new initiatives to educate users on self-help solutions.</li>
+                            <li>Produced and modified QRGs to reflect improved procedures for the most frequent issues seen by service desk staff.</li>
+                            <li>Developed training materials for new service desk hires to get them up to speed on standard operating procedures faster and more efficiently.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2015-2016</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Tennessee -Knoxville</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>Major: Human Ecology - Minor: Business/Marketing</div>
+                            <div>Walters Scholar 1997-2001</div>
+                            <div>Gamma Sigma Sigma Service Sorority</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">1997 - 2001</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                    </ul>
+                    <p>
+                    <div class="subheading mb-3">Passionate About</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Amazon Web Services (AWS) Cloud
+                        </li>
+                         <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Infrastructure as Code: AWS Serverless Application Model & CloudFormation
+                        </li>
+                         <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                    <p>
+                    <div class="subheading mb-3">Proficient In</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            VMWare vSphere
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Linux
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Windows
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            HTML/CSS
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Team Collaboration: JIRA & Slack
+                        </li>
+                    </ul>
+                    <p>
+                    <div class="subheading mb-3">Knowledgable About</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Programming/Scripting: Python & JavaScript
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            CI/CD: GitHub, GitHub Actions, Jenkins, AWS CodePipeline
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Serverless Technology: AWS Lambda, AWS ECS, Docker, DynamoDB
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Certifications-->
+            <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certifications</h2>
+                            <a href="https://www.youracclaim.com/badges/8c745f0b-6308-4c4c-a045-68091a7ac294"><img src="https://imgur.com/phPT1qi.png"></a>
+
+                            <a href="https://www.youracclaim.com/badges/612f594d-2332-4b9c-810b-5c436af1e4d1"><img src="https://imgur.com/lyZSOHg.png"></a>
+
+                            <a href="https://www.youracclaim.com/badges/154c0e4c-9c72-45fc-80ae-f2e5197dc6bb"><img src="https://imgur.com/huz15bi.png"></a>
+
+                            <a href="https://www.credly.com/earner/earned/badge/d4a142e7-0784-4c12-bb22-d5a7889d2498"><img src="https://i.imgur.com/0wCqGjt.png"></a>
+                    <p>
+                    <p>
+                            <a href="https://www.youracclaim.com/badges/ee876d03-91ba-40e2-9ec7-de29f522f9ce"><img src="https://imgur.com/uVqneEq.png"></a>
+
+                            <a href="https://www.credly.com/earner/earned/badge/224e6ea7-fbd2-43b9-a163-606e09e26d9c"><img src="https://imgur.com/C2gu3ml.png"></a>
+
+                            <a href="https://www.scrum.org/certificates/495408"><img src="https://imgur.com/vRggAwy.png"></a>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Articles -->
+            <section class="resume-section" id="articles">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Articles</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="far fa-newspaper"></i></span>
+                            <a class="u-link" href="https://dev.to/stacystipes/the-cloud-resume-challenge-how-i-fell-in-love-with-sam-2ik3">The Cloud Resume Challenge - How I Fell in Love With SAM</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Counter JS-->
+        <script src="js/visitors.js"></script>
+    </body>
 </html>

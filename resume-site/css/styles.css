@@ -10133,3 +10133,19 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* CSS for project images */
+.project-gif,
+.project-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+  max-height: 300px; /* Adjust this value according to your preference */
+}
+

@@ -28,22 +28,14 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Wilkin Ruiz Valerio</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-               src="assets/img/profile.jpg"
-               alt=""/>
+          <!--  <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+       src="assets/img/profile.jpg"
+       alt=""/>-->
         </span>
       </a>
-      <button class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+      <div class="navbar-collapse collapse order-lg-1 order-3"
+           id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
@@ -62,26 +54,42 @@
           <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#articles">Articles</a></li> -->
         </ul>
       </div>
+      <div class="ml-auto d-lg-none order-lg-3">
+        <!-- This div is now aligned to the right -->
+        <!-- Only visible on screens smaller than large (lg) -->
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
     </nav>
     <!-- Page Content-->
     <div class="container-fluid p-0">
       <!-- About-->
       <section class="resume-section" id="about">
         <div class="resume-section-content">
-          <h1 class="mb-0">
-            Wilkin Ruiz
-            <span class="text-primary">Valerio</span>
-          </h1>
+          <img class="img-profile rounded-circle mx-auto mb-2"
+               src="assets/img/profile.jpg"
+               alt=""/>
+          <div class="name-title">
+            <h1 class="name mb-0">Wilkin Ruiz Valerio</h1>
+            <h2 class="title mb-5">Cloud Engineer</h2>
+          </div>
           <div class="subheading mb-5">
             Bay Point, California
-            <a href="mailto:wilkin.ruizvalerio@gmail.com">Email</a>
+            <a href="mailto:wilkin.ruizvalerio@gmail.com">wilkin.ruizvalerio@gmail.com</a>
           </div>
           <p class="lead mb-5">
             <p>
-              I am an AWS Cloud Engineer skilled in IT Operations Management and System Administration for classified systems in the government sector. Experienced with Amazon Web Services and VMWare vSphere in on-premises private cloud and hybrid cloud IaaS environments.
+              As a Cloud Engineer, I specialize in designing and implementing scalable cloud solutions using cutting-edge technologies. I am proficient in leveraging AWS services such as Lambda Functions, Amazon DynamoDB, and AWS SAM to build robust serverless architectures that meet the dynamic needs of modern applications. My expertise extends to GitHub Actions for CI/CD, Python for backend development, and JavaScript for frontend design.
             </p>
             <p>
-              I have a demonstrated history of turning difficult projects into successes by pinpointing problem areas, eliminating obstacles, implementing process improvements, and improving team dynamics and morale. My enthusiastic attitude, strong work ethic, creative problem solving, and commitment to continued professional education are an asset to any team or project.
+              Continuously striving for professional growth, I am expanding my skills to include infrastructure as code (IaC) practices with Terraform. By mastering Terraform, I aim to streamline cloud resource management and deployment processes, ensuring consistency, reliability, and efficiency across projects.
             </p>
             <p>
               Visits: <span id="visits"></span>
@@ -97,231 +105,234 @@
             <!-- Experience-->
             <section class="resume-section" id="experience">
               <div class="resume-section-content">
-                <h2 class="mb-5">Experience</h2>
+                <h2 class="mb-5">Work Experience</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="flex-grow-1">
-                    <h3 class="mb-0">Cloud Operations Engineer</h3>
-                    <div class="subheading mb-3">NexGen Data Systems</div>
+                    <h3 class="mb-0">Cloud Engineer</h3>
+                    <div class="subheading mb-3">FJZ.LLC</div>
+                    <ul>
+                      <li>Implemented and managed Firebase backend services to facilitate efficient application data management.</li>
+                      <li>Designed and implemented a user-friendly form for rental applications, enhancing the overall user experience.</li>
+                      <li>
+                        Integrated an AI evaluation feature using Firebase to assist administrators in assessing the suitability of potential tenants, showcasing innovative problem-solving skills.
+                      </li>
+                      <li>Developed an email confirmation system leveraging Firebase to streamline communication processes.</li>
+                      <li>Utilized Firebase authentication protocols to enhance data integrity and privacy for users.</li>
+                    </ul>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="text-primary">June 2023 - Present</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                    <h3 class="mb-0">Database Administrator</h3>
+                    <div class="subheading mb-3">
+                      Social Reverie Remote
+                    </div>
                     <ul>
                       <li>
-                        Designs and implements cloud infrastructure resources including EC2 instances, Load Balancers, CloudFront distributions, Auto-Scaling Groups, Databases, S3 storage and static websites using Amazon Web Services (AWS) in both commercial (public) and GovCloud environments.
+                        Maintained secure SQL and NoSQL database systems, ensuring data consistency.
                       </li>
                       <li>
-                        Performs AWS system configuration to include creation/change/deletion of IAM users, roles, and permissions, management of Simple Notification Service (SNS) and Simple Email Service (SES), creation and changes to VPCs, Security Groups, network ACLs, and DNS records, configuration of CloudWatch alarms and CloudTrail API logging.
+                        Optimized database operations by implementing performance tuning practices, thereby reducing query response time.
                       </li>
                       <li>
-                        Performs weekly maintenance for tenant sites, including S3 bucket and lifecycle maintenance, CloudFront configuration, WordPress patching, tenant site decommissions, configuration of AWS Web Application Firewalls (WAF), deployment of AWS Elastic Beanstalk environments, and policy updates.
-                      </li>
-                      <li>
-                        Creates hardened, STIG AMI images that comply with DOD standards and best practices, works with IA/C&A teams to conduct security scans and audits, performs patches and updates as necessary to remediate security vulnerabilities via AWS Systems Manager.
-                      </li>
-                      <li>Develops scripts using AWS Lambda, Python, PowerShell, and Bash to automate tasks, workflows, and processes.</li>
-                      <li>
-                        Monitors performance of remote and local systems to identify problems, performs analysis to identify root cause of performance issues using AWS CloudWatch and CloudTrail, takes appropriate action to resolve issues.
-                      </li>
-                      <li>
-                        Documentation of cloud architecture and operational processes, including maintenance processes, installation guides, configuration guides, user access and security, backups and restoration, and software dependencies.
+                        Coordinated with cross-functional teams to establish database backup and disaster recovery protocols, preserving data integrity in emergency scenarios.
                       </li>
                     </ul>
                   </div>
                   <div class="flex-shrink-0">
-                    <span class="text-primary">2021 - Present</span>
+                    <span class="text-primary">December 2021 - January 2023</span>
                   </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="flex-grow-1">
                     <h3 class="mb-0">
-                      Cloud DevOps Engineer
+                      Correctional Officer
                     </h3>
                     <div class="subheading mb-3">
-                      Perspecta
+                      NYC Department of Correction | Queens, NY
                     </div>
                     <ul>
                       <li>
-                        Designed cloud infrastructure for the development project architectural runway using Amazon Web Services (AWS) and Terraform in both commercial (public) and GovCloud environments, enabling other project teams to work on their features without further delay to the project.
+                        Ensured safety and security within a correctional facility, effectively managing inmate behavior and enforcing rules and regulations.
                       </li>
                       <li>
-                        Creation and configuration of cloud architecture, including Security Groups, VPCs, network ACLs, EC2 instances, AWS RDS databases, Load Balancers, and user accounts/roles/permissions.
+                        Lead intake officer responsible for managing and broadening cases for database management, reducing processing times by 30%.
                       </li>
                       <li>
-                        Worked with application vendors on architecture, deployment, and configuration of applications into the AWS cloud environment using infrastructure as code. Created custom scripts to handle the deployments using Terraform, PowerShell, and Bash to provide an immutable process that could be replicated and run automatically through a CI/CD pipeline.
-                      </li>
-                      <li>
-                        Created continuous integration/continuous delivery (CI/CD) pipeline using GitHub and AWS CodePipeline.
-                      </li>
-                      <li>
-                        Created and managed testing and training environments for Agile Release Train teams to support vendor training and classes.
-                      </li>
-                      <li>
-                        Created AWS Lambda functions using Python to automate EC2 instance shutdowns and restarts within the development environment during off-business hours to save on costs.
-                      </li>
-                      <li>
-                        Created hardened, STIG AMI images that comply with DOD standards and best practices, worked with IA/C&A teams on security scans and audits.
-                      </li>
-                      <li>
-                        Worked with other Agile Release Train teams on troubleshooting application, system, and database issues at the cloud level.
-                      </li>
-                      <li>
-                        Provided AWS training and guidance to other teams as necessary so that they could work within the AWS management console and CLI more efficiently.
-                      </li>
-                      <li>
-                        Documentation of cloud architecture and applications, including installation guides, configuration guides, user access and security, backups and restoration, and software dependencies.
+                        Coordinated rotating shift assignments for an intake unit consisting of 10+ officers, including communication of responsibilities and monitoring schedules.
                       </li>
                     </ul>
                   </div>
                   <div class="flex-shrink-0">
-                    <span class="text-primary">2020 - 2021</span>
+                    <span class="text-primary">June 2017 - August 2020</span>
                   </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="flex-grow-1">
                     <h3 class="mb-0">
-                      Cloud Operations Engineer
+                      Waiter/Bartender/Manager
                     </h3>
                     <div class="subheading mb-3">
-                      Cloud Lake Technology
+                      Don Coqui Restaurant | White Plains, NY
                     </div>
                     <ul>
                       <li>
-                        Administration of VMWare vCenter 7.0 environment, including configuring ESXi hosts, storage, and compute, configuration of tenant/application clusters, vCenter environment upgrades, and designing custom reports, metrics, and super metrics via vRealize Operations Manager.
+                        Developed updated hiring, training, and management protocols resulting in 20% higher retention rate than other regional locations.
                       </li>
                       <li>
-                        Installation, Configuration, and Administration of Operations applications, including Solarwinds, JIRA, Ivanti Shavlik, and Tenable Nessus.
-                      </li>
-                      <li>
-                        Windows Administration, including Active Directory, DNS, replication, account creation, password changes, and Microsoft Exchange administration.
-                      </li>
-                      <li>
-                        Identifies system vulnerabilities by creating and reviewing Nessus scans of cloud environment and providing security analysis and risk identification.
-                      </li>
-                      <li>
-                        Patches all management network systems using to ensure that security vulnerabilities have been eliminated and OS and application upgrades are up to date.
-                      </li>
-                      <li>
-                        Cisco UCS administration including setup and replacement of blades, memory, and other hardware, and configuration of blades.
-                      </li>
-                      <li>
-                        Conducts new product studies and performs requirements analysis, new product installations, and testing to determine what products should be recommended for procurement and production.
-                      </li>
-                      <li>
-                        Assist customers with troubleshooting, requests for additional resources, and other service requests as needed.
-                      </li>
-                      <li>
-                        Coordinate new tenant requests with engineering teams to ensure that all customer requirements are met.
-                      </li>
-                      <li>
-                        Documentation of SOPs, system configuration information, customer QRGs, and marketing materials.
+                        Created positive customer experience by establishing strong communication with staff and patrons.
                       </li>
                     </ul>
                   </div>
                   <div class="flex-shrink-0">
-                    <span class="text-primary">2019 - 2020</span>
-                  </div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">
-                      Service Desk Manager
-                    </h3>
-                    <div class="subheading mb-3">
-                      SAVA Solutions
-                    </div>
-                    <ul>
-                      <li>
-                        Received personal commendation from Agency Administrator for excellent service and performance.
-                      </li>
-                      <li>
-                        Received Contractor of the Quarter award in 2017.
-                      </li>
-                      <li>
-                        Managed the Service Desk through major contract transition.
-                      </li>
-                      <li>
-                        Drastically improved Service Desk SLAs/KPIs while also improving team morale.
-                      </li>
-                      <li>
-                        Managed two separate Call Center System launches, eventually moving the Service Desk to a modern VOIP solution with remote support.
-                      </li>
-                      <li>
-                        Provided career development coaching to Service Desk technicians.
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="flex-shrink-0">
-                    <span class="text-primary">2016-2019</span>
-                  </div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">
-                      Windows Systems Engineer/Team Lead
-                    </h3>
-                    <div class="subheading mb-3">
-                      SAVA Solutions
-                    </div>
-                    <ul>
-                      <li>
-                        Provided Tier 1 support to over 15,000 users, including troubleshooting for Active Directory, hardware, software, networking, and mobile solutions for PC, Mac, iPhone, iPad, Samsung Galaxy and Blackberry.
-                      </li>
-                      <li>
-                        Provided quality assurance by following up on audits and problem tickets, ensuring that users were helped accurately and efficiently, and evaluating areas for improvement in procedures and training.
-                      </li>
-                      <li>
-                        Collaborated with service desk and project management on process improvement to increase the efficiency of the service desk. This included changes to the phone tree, staff skill tiering, implementing ticket templates, and developing new initiatives to educate users on self-help solutions.
-                      </li>
-                      <li>
-                        Produced and modified QRGs to reflect improved procedures for the most frequent issues seen by service desk staff.
-                      </li>
-                      <li>
-                        Developed training materials for new service desk hires to get them up to speed on standard operating procedures faster and more efficiently.
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="flex-shrink-0">
-                    <span class="text-primary">2015-2016</span>
+                    <span class="text-primary">February 2011 - June 2017</span>
                   </div>
                 </div>
               </div>
             </section>
             <hr class="m-0" />
             <!-- Technical Experience-->
-
             <section class="resume-section" id="technical-experience">
               <div class="resume-section-content">
                 <h2 class="mb-5">
                   Technical Experience
                 </h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">
-                      Auto Hub
+                <div class="project-grid">
+                  <div class="project">
+                    <img src="assets/img/awsresumepic.PNG"
+                         alt="AWS Serverless Website"
+                         class="project-image">
+                    <h3>
+                      AWS Serverless Website
                     </h3>
-                    <div class="subheading mb-3">
-                      GitHub Repo: <a href="https://github.com/wilscooding/Auto-Hub">Auto Hub</a>
-                    </div>
-                    <img src="assets/img/AutoHub.gif" alt="Auto Hub" class="project-gif">
+                    <p>
+                      Live Website: <a href="https://www.wilkinruiz.com/">Wilkin Ruiz Website</a>
+                    </p>
+                    <p>
+                      Designed and implemented a scalable, serverless website architecture using AWS services, demonstrating expertise in cloud infrastructure and serverless technologies.
+                    </p>
+                    <h4>
+                      Technologies Used:
+                    </h4>
+                    <ul>
+                      <li>
+                        AWS: Lambda Functions, Amazon DynamoDB, Amazon S3, AWS SAM(Serverless Application Model), AWS API Gateway, AWS CloudFront, AWS Route 53, AWS Certificate Manager
+                      </li>
+                      <li>
+                        GitHub Actions  for Continuous Integration and Deployment CI/CD
+                      </li>
+                      <li>
+                        Python
+                      </li>
+                      <li>
+                        JavaScript
+                      </li>
+                      <li>
+                        HTML/CSS(for website layout)
+                      </li>
+                    </ul>
+                    <!-- <p>
+                      Developed and integrated API services using AWS Lambda and API Gateway for real-time data processing and retrieval, enhancing the user experience by dynamically updating visitor count on the website.
+                    </p>
+                    <p>
+                      Successfully utilized AWS SAM for application deployment, showcasing proficiency in infrastructure as code and automated deployment strategies.
+                    </p>
+                    <p>
+                      Demonstrated advanced knowledge of Python programming and IDNA (Internationalized Domain Names in Applications) standards by managing dependencies and their configurations.
+                    </p>
+                    <p>
+                      Showcased ability to work with API endpoints for both data submission and retrieval, effectively utilizing JavaScript for asynchronous web content updates.
+                    </p> -->
                   </div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">
-                      Cookit
-                    </h3>
-                    <div class="subheading mb-3">
-                      GitHub Repo: <a href="https://github.com/wilscooding/Cookit">Cookit</a>
-                    </div>
-                    <img src="assets/img/Cookit.gif" alt="Cookit" class="project-gif">
-                  </div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                  <div class="flex-grow-1">
-                    <h3 class="mb-0">
+                  <div class="project">
+                    <img src="assets/img/FJZ.PNG" alt="FJZ Apartments" class="project-image">
+                    <h3>
                       FJZ Apartments
                     </h3>
-                    <div class="subheading mb-3">
+                    <p>
                       Live Website: <a href="https://fjzapartments.com/">FJZ Apartments</a>
-                    </div>
-                    <img src="assets/img/FJZ.PNG" alt="FJZ Apartments" class="project-img">
+                    </p>
+                    <p>
+                      comprehensive web application for property management and real estate operations. The application features robust functionalities for user authentication, user roles management, tenant evaluation, and automated tasks. Built using React for the frontend, the application leverages Firebase cloud services such as Authentication, Firestore database, and Cloud Functions for seamless backend operations. Additionally, the application utilizes OpenAI's GPT-3.5 model for natural language processing tasks, enabling efficient tenant assessments based on provided application data. The cloud-based architecture ensures scalability, security, and streamlined property management processes.
+                    </p>
+                    <h4>
+                      Technologies Used:
+                    </h4>
+                    <ul>
+                      <li>
+                        Firebase: Hosting, Authentication, Firestore DB, Firebase Functions
+                      </li>
+                      <li>
+                        OpenAI API
+                      </li>
+                      <li>
+                        React
+                      </li>
+                      <li>
+                        JavaScript
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="project">
+                    <img src="assets/img/AutoHub.gif" alt="Auto Hub" class="project-image">
+                    <h3>
+                      Auto Hub
+                    </h3>
+                    <p>
+                      Source Code: <a href="https://github.com/wilscooding/Auto-Hub">GitHub</a>
+                    </p>
+                    <p>
+                      AutoHub is a comprehensive application that consists of two microservices: Service and Sales. These microservices are designed to efficiently handle different aspects of automobile dealership management, ensuring a seamless experience for both customers and salespersons.
+                    </p>
+                    <h4>
+                      Technologies Used:
+                    </h4>
+                    <ul>
+                      <li>
+                        Backend: Django (Python)
+                      </li>
+                      <li>
+                        Frontend: React (JavaScript)
+                      </li>
+                      <li>
+                        Database: PostgreSQL
+                      </li>
+                      <li>
+                        Containerization: Docker
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="project">
+                    <img src="assets/img/Cookit.gif" alt="Cookit" class="project-image">
+                    <h3>
+                      CookIt
+                    </h3>
+                    <p>
+                      Source Code: <a href="https://github.com/wilscooding/Cookit">GitHub</a>
+                    </p>
+                    <p>
+                      CookIt is a web application that helps users keep track of their recipes, ingredients inventory, and grocery lists, all in one place. It allows users to search for recipes, save them to their recipe book, and customize them to their tastes. Additionally, users can manage their own recipes, add/edit/delete ingredients to their inventory, and create/delete items from their grocery list.
+                    </p>
+                    <h4>
+                      Technologies Used:
+                    </h4>
+                    <ul>
+                      <li>
+                        Backend: FastAPI (Python)
+                      </li>
+                      <li>
+                        Frontend: React (JavaScript)
+                      </li>
+                      <li>
+                        Database: PostgreSQL
+                      </li>
+                      <li>
+                        Containerization: Docker
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -333,103 +344,123 @@
                 <h2 class="mb-5">
                   Skills
                 </h2>
+                <!-- Cloud Computing Platform -->
                 <div class="subheading mb-3">
-                  Programming Languages & Tools
+                  Cloud Computing Platform
                 </div>
-                <ul class="list-inline dev-icons">
-                  <li class="list-inline-item">
-                    <i class="fab fa-html5">HTML</i>
+                <ul class="fa-ul mb-0">
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Amazon Web Services (AWS)
                   </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-css3-alt">CSS</i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-js-square"></i>JavaScript
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-python"></i>Python
-                  </li>
-                  <!-- <li class="list-inline-item"><i class="fab fa-wordpress"></i></li> -->
-                  <!-- <li class="list-inline-item"><i class="fab fa-npm"></i></li>-->
                 </ul>
-                <p>
-                  <div class="subheading mb-3">
-                    Passionate About
-                  </div>
-                  <ul class="fa-ul mb-0">
-                    <li>
-                      <span class="fa-li"><i class="fas fa-check"></i></span>
-                      Amazon Web Services (AWS) Cloud
-                    </li>
-                    <li>
-                      <span class="fa-li"><i class="fas fa-check"></i></span>
-                      Infrastructure as Code: AWS Serverless Application Model & CloudFormation
-                    </li>
-                    <li>
-                      <span class="fa-li"><i class="fas fa-check"></i></span>
-                      Agile Development & Scrum
-                    </li>
-                  </ul>
-                  <p>
-                    <div class="subheading mb-3">
-                      Proficient In
-                    </div>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        VMWare vSphere
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Linux
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Windows
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        HTML/CSS
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Team Collaboration: JIRA & Slack
-                      </li>
-                    </ul>
-                    <p>
-                      <div class="subheading mb-3">
-                        Knowledgable About
-                      </div>
-                      <ul class="fa-ul mb-0">
-                        <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          Programming/Scripting: Python & JavaScript
-                        </li>
-                        <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          CI/CD: GitHub, GitHub Actions, Jenkins, AWS CodePipeline
-                        </li>
-                        <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          Serverless Technology: AWS Lambda, AWS ECS, Docker, DynamoDB
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-                  <hr class="m-0" />
-                  <!-- Certifications-->
-                  <section class="resume-section" id="certifications">
-                    <div class="resume-section-content">
-                      <h2 class="mb-5">
-                        Certifications
-                      </h2>
-                      <a href="https://www.youracclaim.com/badges/8c745f0b-6308-4c4c-a045-68091a7ac294">
-                        <img src="https://imgur.com/phPT1qi.png">
-                      </a>
-                      <!-- <a href="https://www.youracclaim.com/badges/612f594d-2332-4b9c-810b-5c436af1e4d1">
-                        <img src="https://imgur.com/lyZSOHg.png">
-                      </a>
-                      <a href="https://www.youracclaim.com/badges/154c0e4c-9c72-45fc-80ae-f2e5197dc6bb">
+                <!-- Infrastructure as Code (IaC) -->
+                <!-- Infrastructure as Code (IaC) -->
+                <div class="subheading mb-3">
+                  Infrastructure as Code (IaC)
+                </div>
+                <ul class="fa-ul mb-0">
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS CloudFormation
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS Serverless Application Model (SAM)
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS Lambda Functions
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Amazon S3
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS API Gateway
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS CloudFront
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS Route 53
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS Certificate Manager
+                  </li>
+                </ul>
+                <!-- CI/CD -->
+                <div class="subheading mb-3">
+                  CI/CD
+                </div>
+                <ul class="fa-ul mb-0">
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    GitHub Actions
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS CodePipeline
+                  </li>
+                  <!-- Add other CI/CD tools as needed -->
+                </ul>
+                <!-- Programming Languages -->
+                <div class="subheading mb-3">
+                  Programming Languages
+                </div>
+                <ul class="fa-ul mb-0">
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Python
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    JavaScript
+                  </li>
+                  <!-- Add other programming languages as needed -->
+                </ul>
+                <!-- Containerization -->
+                <div class="subheading mb-3">
+                  Containerization
+                </div>
+                <ul class="fa-ul mb-0">
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Docker
+                  </li>
+                  <!-- Add other containerization tools as needed -->
+                </ul>
+                <!-- Database Management -->
+                <div class="subheading mb-3">
+                  Database Management
+                </div>
+                <ul class="fa-ul mb-0">
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    AWS DynamoDB
+                  </li>
+                  <!-- Add other database management tools as needed -->
+                </ul>
+              </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Certifications-->
+            <section class="resume-section" id="certifications">
+              <div class="resume-section-content">
+                <h2 class="mb-5">
+                  Certifications
+                </h2>
+                <a href="https://www.credly.com/earner/earned/badge/2f7c83f7-917b-41b7-9db0-713b642aef92">
+                  <img src="https://imgur.com/phPT1qi.png">
+                </a>
+                <a >
+                  <img src="assets\img\hackreactor.PNG">
+                </a>
+                <!-- <a href="https://www.youracclaim.com/badges/154c0e4c-9c72-45fc-80ae-f2e5197dc6bb">
                         <img src="https://imgur.com/huz15bi.png">
                       </a>
                       <a href="https://www.credly.com/earner/earned/badge/d4a142e7-0784-4c12-bb22-d5a7889d2498">
@@ -445,11 +476,11 @@
                         <a href="https://www.scrum.org/certificates/495408">
                           <img src="https://imgur.com/vRggAwy.png">
                         </a> -->
-                    </div>
-                    <!-- </section>
+              </div>
+              <!-- </section>
                     <hr class="m-0" /> -->
-                    <!-- Articles -->
-                    <!-- <section class="resume-section" id="articles">
+              <!-- Articles -->
+              <!-- <section class="resume-section" id="articles">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Articles</h2>
                     <ul class="fa-ul mb-0">
@@ -457,18 +488,48 @@
                             <span class="fa-li"><i class="far fa-newspaper"></i></span>
                             <a class="u-link" href="https://dev.to/stacystipes/the-cloud-resume-challenge-how-i-fell-in-love-with-sam-2ik3">The Cloud Resume Challenge - How I Fell in Love With SAM</a>
                         </li> -->
-                  </ul>
-                </div>
-              </section>
-            </div>
-            <!-- Bootstrap core JS-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-            <!-- Third party plugin JS-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-            <!-- Core theme JS-->
-            <script src="js/scripts.js"></script>
-            <!-- Counter JS-->
-            <script src="js/visitors.js"></script>
-          </body>
-        </html>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+      <!-- Third party plugin JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+      <!-- Counter JS-->
+      <script src="js/visitors.js"></script>
+      <script>
+    // Function to fetch visitor count from Lambda function
+        function fetchVisitorCount() {
+            fetch('https://yfniwvuig9.execute-api.us-east-1.amazonaws.com/Prod/get')
+                .then(response => response.json())
+                .then(data => {
+                    // Update the visitor count placeholder with the fetched count
+                    document.getElementById('visits').textContent = data.count;
+                })
+                .catch(error => {
+                    console.error('Error fetching visitor count:', error);
+                });
+        }
+
+        // Function to increment visitor count using Lambda function
+        function incrementVisitorCount() {
+            fetch('https://yfniwvuig9.execute-api.us-east-1.amazonaws.com/Prod/put')
+                .then(response => response.json())
+                .then(data => {
+                    // Fetch and display the updated visitor count
+                    fetchVisitorCount();
+                })
+                .catch(error => {
+                    console.error('Error incrementing visitor count:', error);
+                });
+        }
+
+        // Call the function to increment visitor count when the page loads
+        incrementVisitorCount();
+      </script>
+    </body>
+  </html>
